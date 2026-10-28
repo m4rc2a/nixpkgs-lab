@@ -30,7 +30,7 @@
         in
         {
           default = pkgs.sapcli;
-          inherit (pkgs) sapcli;
+          inherit (pkgs) sapcli rustxl;
           pyodata = pkgs.python3Packages.pyodata;
         }
       );
@@ -41,7 +41,7 @@
           pkgs = pkgsFor system;
         in
         {
-          inherit (pkgs) sapcli;
+          inherit (pkgs) sapcli rustxl;
           pyodata = pkgs.python3Packages.pyodata;
         }
       );

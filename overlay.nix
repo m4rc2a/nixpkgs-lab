@@ -12,4 +12,6 @@ in
   sapcli = final.callPackage ./pkgs/by-name/sa/sapcli/package.nix {
     inherit python3Packages;
   };
+
+  rustxl = final.callPackage ./pkgs/by-name/ru/rustxl/package.nix { };
 }
